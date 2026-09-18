@@ -56,6 +56,28 @@ for (int i = 0; i < 10; i++) {
 }
 
 cout << endl;
+
+int valorBuscado;
+
+cout << "Ingrese el valor que desea buscar: ";
+cin >> valorBuscado;
+
+int posicion = -1;
+
+for (int i = 0; i < 10; i++) {
+    if (numeros[i] == valorBuscado) {
+        posicion = i;
+        break;
+    }
+}
+
+if (posicion != -1) {
+    cout << "El valor " << valorBuscado
+         << " se encuentra en la posicion " << posicion << "." << endl;
+} else {
+    cout << "El valor " << valorBuscado
+         << " no se encuentra en el arreglo." << endl;
+}
          
          return 0;
 }
