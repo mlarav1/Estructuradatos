@@ -4,3 +4,22 @@ numeros = [random.randint(1, 100) for _ in range(10)]
 
 print("Arreglo inicial:")
 print(numeros)
+
+print("Recorrido con for:")
+
+for i in range(len(numeros)):
+    print("Posición", i, ":", numeros[i])
+
+
+print("Recorrido con for-each:")
+
+for numero in numeros:
+    print(numero)
+
+print("Arreglo después de cambiar los impares por cero:")
+
+for i in range(len(numeros)):
+    if numeros[i] % 2 != 0:
+        numeros[i] = 0
+
+print(numeros)
