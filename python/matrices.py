@@ -22,3 +22,11 @@ for columna in range(3):
     for fila in range(3):
         print(matriz[fila][columna], end=" ")
     print()
+
+suma = 0
+
+for fila in range(3):
+    for columna in range(3):
+        suma += matriz[fila][columna]
+
+print("Suma de todos los elementos:", suma)
