@@ -28,5 +28,15 @@ for (int columna = 0; columna < 3; columna++) {
     cout << endl;
 }
 
+int suma = 0;
+
+for (int fila = 0; fila < 3; fila++) {
+    for (int columna = 0; columna < 3; columna++) {
+        suma += matriz[fila][columna];
+    }
+}
+
+cout << "Suma de todos los elementos: " << suma << endl;
+
     return 0;
 }
