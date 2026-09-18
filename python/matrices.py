@@ -30,3 +30,11 @@ for fila in range(3):
         suma += matriz[fila][columna]
 
 print("Suma de todos los elementos:", suma)
+
+
+matriz[0], matriz[2] = matriz[2], matriz[0]
+
+print("\nMatriz después de intercambiar la primera fila con la última:")
+
+for fila in matriz:
+    print(fila)
