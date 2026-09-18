@@ -1,26 +1,32 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 
 using namespace std;
 
 int main() {
 
-    int numeros[10];
+    int matriz[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
 
-    srand(time(0));
+    cout << "Matriz 3x3:" << endl;
 
-    for (int i = 0; i < 10; i++) {
-        numeros[i] = rand() % 100 + 1;
+    for (int fila = 0; fila < 3; fila++) {
+        for (int columna = 0; columna < 3; columna++) {
+            cout << matriz[fila][columna] << " ";
+        }
+        cout << endl;
     }
 
-    cout << "Arreglo inicial:" << endl;
+    cout << "Recorrido por columnas:" << endl;
 
-    for (int i = 0; i < 10; i++) {
-        cout << numeros[i] << " ";
+for (int columna = 0; columna < 3; columna++) {
+    for (int fila = 0; fila < 3; fila++) {
+        cout << matriz[fila][columna] << " ";
     }
-
     cout << endl;
+}
 
     return 0;
 }
