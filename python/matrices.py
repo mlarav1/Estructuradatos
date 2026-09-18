@@ -15,3 +15,10 @@ for fila in matriz:
     for elemento in fila:
         print(elemento, end=" ")
     print()
+
+print("Recorrido de la matriz por columnas:")
+
+for columna in range(3):
+    for fila in range(3):
+        print(matriz[fila][columna], end=" ")
+    print()
