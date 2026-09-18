@@ -22,10 +22,16 @@ int main() {
 
     cout << endl;
 
-   cout << "Recorrido con for clásico:" << endl;
+   cout << "Recorrido con for:" << endl;
 
 for (int i = 0; i < 10; i++) {
     cout << "Posicion " << i << " : " << numeros[i] << endl;
+}
+
+cout << "Recorrido con for-each:" << endl;
+
+for (int numero : numeros) {
+    cout << numero << endl;
 }
          return 0;
 }
