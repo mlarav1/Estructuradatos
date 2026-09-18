@@ -38,5 +38,20 @@ for (int fila = 0; fila < 3; fila++) {
 
 cout << "Suma de todos los elementos: " << suma << endl;
 
+cout << "Matriz después de intercambiar la primera fila con la última:" << endl;
+
+for (int columna = 0; columna < 3; columna++) {
+    int temporal = matriz[0][columna];
+    matriz[0][columna] = matriz[2][columna];
+    matriz[2][columna] = temporal;
+}
+
+for (int fila = 0; fila < 3; fila++) {
+    for (int columna = 0; columna < 3; columna++) {
+        cout << matriz[fila][columna] << " ";
+    }
+    cout << endl;
+}
+
     return 0;
 }
