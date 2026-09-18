@@ -47,4 +47,13 @@ if posicion != -1:
     print("El valor", valor_buscado, "se encuentra en la posición", posicion)
 else:
     print("El valor", valor_buscado, "no se encuentra en el arreglo.")
-    
+
+
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print("Matriz 3x3:")
+for fila in matriz:
+    print(fila)
