@@ -34,7 +34,7 @@ for (int numero : numeros) {
     cout << numero << endl;
 }
 
-cout << "Arreglo después de cambiar los impares por cero:" << endl;
+cout << "Arreglo despues de cambiar los impares por cero:" << endl;
 
 for (int i = 0; i < 10; i++) {
     if (numeros[i] % 2 != 0) {
@@ -44,6 +44,15 @@ for (int i = 0; i < 10; i++) {
 
 for (int i = 0; i < 10; i++) {
     cout << numeros[i] << " ";
+}
+
+cout << endl;
+
+
+cout << "Valores multiplicados por su indice:" << endl;
+
+for (int i = 0; i < 10; i++) {
+    cout << numeros[i] * i << " ";
 }
 
 cout << endl;
