@@ -23,3 +23,12 @@ for i in range(len(numeros)):
         numeros[i] = 0
 
 print(numeros)
+
+
+resultado_indice = numeros.copy()
+
+for i in range(len(resultado_indice)):
+    resultado_indice[i] = resultado_indice[i] * i
+
+print("Arreglo después de multiplicar cada valor por su índice:")
+print(resultado_indice)
