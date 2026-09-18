@@ -32,3 +32,19 @@ for i in range(len(resultado_indice)):
 
 print("Arreglo después de multiplicar cada valor por su índice:")
 print(resultado_indice)
+
+
+valor_buscado = int(input("Ingrese el valor que desea buscar: "))
+
+posicion = -1
+
+for i in range(len(numeros)):
+    if numeros[i] == valor_buscado:
+        posicion = i
+        break
+
+if posicion != -1:
+    print("El valor", valor_buscado, "se encuentra en la posición", posicion)
+else:
+    print("El valor", valor_buscado, "no se encuentra en el arreglo.")
+    
